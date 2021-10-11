@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="1d77faaa-a2e0-495a-9e6e-0efcf19ed806">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * from test.pokemon]]>
+	</queryString>
+	<field name="id" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="forme_base_pokemon_id" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="generation_id" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="evolution_parent_pokemon_id" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="height" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="weight" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="species" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="color" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="habitat" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="gender_rate" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="capture_rate" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="base_experience" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="143" y="18" width="263" height="43" uuid="33326d1f-b5f7-4d9a-9c72-bf0eb3be4f34"/>
+				<textElement textAlignment="Center">
+					<font size="24"/>
+				</textElement>
+				<text><![CDATA[Reporte de Pokemon]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="41" width="100" height="20" uuid="fb71d422-52cd-4dcc-b17e-bf9b179c980c"/>
+				<text><![CDATA[id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="200" y="41" width="100" height="20" uuid="5a136cdf-ec76-476a-8b79-d7cc955b92fc"/>
+				<text><![CDATA[forme_base_pokemon_id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="41" width="100" height="20" uuid="8528bc56-9134-4183-850b-91d00dd84616"/>
+				<text><![CDATA[generation_id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="221" y="2" width="100" height="20" uuid="79da25be-255c-45f1-9903-c5963fb08723"/>
+				<text><![CDATA[base_experience]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="20" width="100" height="20" uuid="b1df9367-4169-4345-bdd9-a607cf5fed14"/>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="20" width="100" height="20" uuid="2bded28b-e8dc-4649-aded-b621e1664eac"/>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="200" y="20" width="100" height="20" uuid="e1d7b4e3-a06d-417d-9555-1a8d1f6bbe06"/>
+				<textFieldExpression><![CDATA[$F{forme_base_pokemon_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="20" width="100" height="20" uuid="f48fe595-3eb0-49ef-a3f9-375b628cc03f"/>
+				<textFieldExpression><![CDATA[$F{generation_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="400" y="20" width="100" height="20" uuid="ae48dcd6-769f-42c9-a356-122bc06c0e67"/>
+				<textFieldExpression><![CDATA[$F{evolution_parent_pokemon_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="500" y="20" width="100" height="20" uuid="8296f00f-b326-484a-82d1-1334615d202c"/>
+				<textFieldExpression><![CDATA[$F{height}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="105" width="100" height="20" uuid="62b20345-905a-4a2a-8eb4-da411677d900"/>
+				<textFieldExpression><![CDATA[$F{weight}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="105" width="100" height="20" uuid="60afface-6b97-47da-a715-fd822d0355ec"/>
+				<textFieldExpression><![CDATA[$F{species}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="100" y="64" width="100" height="20" uuid="97fa2b42-b38d-4a8b-9648-4bc42e18f73b"/>
+				<text><![CDATA[species]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="200" y="105" width="100" height="20" uuid="f336fef5-76f4-4677-85d8-b9650b0a3a9d"/>
+				<textFieldExpression><![CDATA[$F{color}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="200" y="64" width="100" height="20" uuid="0dec22f6-b504-404e-8760-cff13cd9ab85"/>
+				<text><![CDATA[color]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="300" y="105" width="100" height="20" uuid="81e0cc16-351d-4ab1-8c9c-70eaa0c32f57"/>
+				<textFieldExpression><![CDATA[$F{habitat}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="300" y="64" width="100" height="20" uuid="72a3573f-306f-4e2c-9d30-3b6e4b3ee409"/>
+				<text><![CDATA[habitat]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="400" y="105" width="100" height="20" uuid="4fffe9e3-cacc-4afa-a78c-46e5f948cc3f"/>
+				<textFieldExpression><![CDATA[$F{gender_rate}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="400" y="64" width="100" height="20" uuid="bf2c2e4f-8ed9-4529-a831-578740bb9bb3"/>
+				<text><![CDATA[gender_rate]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="500" y="105" width="100" height="20" uuid="52afeddc-71e6-4491-b6b3-0b5009d9c168"/>
+				<textFieldExpression><![CDATA[$F{capture_rate}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="500" y="64" width="100" height="20" uuid="491b93fa-a983-46de-99e9-7e0129cdf4f1"/>
+				<text><![CDATA[capture_rate]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch">
+			<textField>
+				<reportElement x="221" y="25" width="100" height="20" uuid="4f3147f2-5196-4531-baac-7a6ec66b6390"/>
+				<textFieldExpression><![CDATA[$F{base_experience}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
